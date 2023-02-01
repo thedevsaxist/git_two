@@ -5,7 +5,8 @@ def greeting():
 
 greeting()
 
-if name == "Chidiebube":
-    print(True)
-else:
-    print(False)
+try:
+    if name == "Chidiebube":
+        print(f"Welcome {name}")
+except NameError:
+    print("Access denied")
